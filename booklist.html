@@ -1,0 +1,53 @@
+<div class="container">
+    <hr>
+    <h1>List of books</h1>
+    <hr>
+    <div>
+        <div class="row" id="books">
+        </div>
+    </div>
+</div>
+<div id="editBookModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm" method="POST">
+                    <div class="form-group">
+                        <label for="ISBN">ISBN</label><br>
+                        <input class="form-control" name="isbn"><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="Title">Title</label><br>
+                        <input class="form-control" name="title"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Auther">AUTHER</label><br>
+                        <input class="form-control" name="auther"><br>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="publishdate">PUBLISH DATE</label><br>
+                        <input class="form-control" name="publishDate"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="publish">PUBLISHER</label><br>
+                        <input class="form-control" name="publisher">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberOfPage">NUMBER OF PAGE</label><br>
+                        <input class="form-control" name="numberOfPage"><br><br>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="booklist.js"></script>
